@@ -1,0 +1,105 @@
+.cardParent{
+    display: flex; /* or inline-flex */
+    flex-wrap: wrap;
+    margin:10px;
+    gap: 20px;
+
+}
+.card{
+    position: relative;
+    height:fit-content;
+    width:300px;
+    padding: 0px 10px 0px 10px;
+    border: 2px;
+    text-decoration: none;
+}
+
+.card:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cardImg{
+    max-width:300px;
+    min-width:300px;
+    max-height:140px;
+    min-height:140px;
+    display:block;
+    margin:auto;
+}
+
+.card .boldtext{
+    color:black;
+    font-weight: bold;
+}
+
+.card .text{
+    color:black;
+}
+
+
+.cardButton{
+    position: absolute;
+    width:auto;
+    bottom: 10px;
+   
+}
+
+.card p {
+    text-decoration: none; /* Remove underline from paragraphs inside the Link */
+  }
+  
+.columnButton{
+    display:flex;
+    justify-content: center; /* Center items horizontally */
+    gap:4px;
+    margin-bottom: 10px;
+}
+
+/* Edit Button */
+.editButton {
+    background-color: #3498db; /* Blue color */
+    color: #fff; /* White text color */
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 8px;
+  }
+  
+  .editButton:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+  }
+  
+  /* Delete Button */
+  .deleteButton {
+    background-color: #e74c3c; /* Red color */
+    color: #fff; /* White text color */
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .deleteButton:hover {
+    background-color: #c0392b; /* Darker red on hover */
+  }
+  
+  .addButton{
+    background-color: #27ae60; /* Darker green on hover */
+  color: #fff; /* White text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  }
+
+  .addButton:hover{
+    
+    background-color: #2ecc71; /* Green color */
+  }
+
+  .parent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

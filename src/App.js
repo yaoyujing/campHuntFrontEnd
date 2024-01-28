@@ -1,28 +1,21 @@
-import { useEffect ,useState} from 'react';
-import axios from 'axios';
-import './App.css';
+
+import { BrowserRouter as Router, Routes,Route } from 'react-router-dom';
+import Home from './pages/home';
+import CampGround from './pages/campground';
 
 function App() {
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    axios.get('http://localhost:8000/api/data')
-      .then(response => {
-        setData(response.data.message);
-      })
-      .catch(error => {
-        console.error(error);
-      });
-  }, []);
-
- 
   return (
     <div>
-      <h1>Data from the Backend:</h1>
-      <p>Message from the server: {data}</p>
-      
-    </div>
-  );
+    <Router>
+    <Routes>
+      <Route path="/"  element={<Home />} />
+      <Route path="/campground/:id"  element={<CampGround />} />
+      {/* <Route path="*" element={<NotFound />} /> */}
+      </Routes>
+    </Router>
+  </div>
+ );
+
 }
 
 export default App;

@@ -1,0 +1,27 @@
+.inputError{
+    margin:2px 0px 2px 0px;
+    color:red;
+}
+
+.campcontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 4px; /* Adjust the value according to your needs */
+}
+
+.inputText{
+    font-size:20px;
+}
+
+.inputField{
+    height:30px;
+}
+
+button{
+    width:fit-content;
+    align-self: center; 
+    font-size:20px;
+    margin-top:14px;
+    padding:10px 20px;
+    border-radius: 8px;
+}

@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    margin: 10px 20px;
+}
+
+.containerButton{
+    display:flex;
+    gap:4px;
+}
